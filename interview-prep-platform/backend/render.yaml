@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: interview-prep-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 5001
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        value: interview_prep_super_secret_key_2026
